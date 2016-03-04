@@ -146,8 +146,6 @@ return [
         App\Providers\RouteServiceProvider::class,
         Bestmomo\Scafold\ScafoldServiceProvider::class,
         Yajra\Datatables\DatatablesServiceProvider::class,
-        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
-
     ],
 
     /*
