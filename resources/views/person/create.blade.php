@@ -67,8 +67,7 @@
                                 <div class="col-md-6 col-md-offset-4">
                                     <div class="checkbox">
                                         <label>
-                                            <input type="checkbox" value="1" name="isSubscriber"> É assinante da revista
-                                        </label>
+clear                                        </label>
                                     </div>
                                 </div>
                             </div>
