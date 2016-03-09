@@ -50,7 +50,7 @@ class CadastroController extends Controller
     {
         Person::create($request->all());
 
-        return redirect()->route('cadastro.index');
+        return redirect()->back();
     }
 
     /**
