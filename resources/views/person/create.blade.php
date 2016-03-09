@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Cadastro de pessoas</div>
+                    <div class="panel-heading">INSCRIÇÃO - <strong>Campos seguidos de * são obrigatórios.</strong></div>
                     <div class="panel-body">
                         @if (count($errors) > 0)
                             <div class="alert alert-danger">
@@ -22,49 +22,49 @@
                             {!! csrf_field() !!}
 
                             <div class="form-group">
-                                <label class="col-md-4 control-label">Nome</label>
+                                <label class="col-md-4 control-label">Nome *</label>
                                 <div class="col-md-6">
                                     <input type="text" required="required" class="form-control" name="name"">
                                 </div>
                             </div>
 
-                            {{--<div class="form-group">
+                            <div class="form-group">
                                 <label class="col-md-4 control-label">E-mail</label>
                                 <div class="col-md-6">
                                     <input type="email" class="form-control" name="email">
                                 </div>
-                            </div>--}}
-
-                            <div class="form-group">
-                                <label class="col-md-4 control-label">Idade</label>
-                                <div class="col-md-2">
-                                    <input type="text" required="required" class="form-control" name="age">
-                                </div>
                             </div>
 
                             <div class="form-group">
-                                <label class="col-md-4 control-label">Cidade</label>
+                                <label class="col-md-4 control-label">Cidade *</label>
                                 <div class="col-md-4">
                                     <input type="text" required="required" class="form-control" name="city">
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label class="col-md-4 control-label">UF</label>
+                                <label class="col-md-4 control-label">UF *</label>
                                 <div class="col-md-2">
                                     <input type="text" required="required" class="form-control" name="uf">
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label class="col-md-4 control-label">Telefone</label>
+                                <label class="col-md-4 control-label">Telefone *</label>
                                 <div class="col-md-4">
                                     <input type="text" required="required" class="form-control" name="phone">
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label class="col-md-4 control-label">Sexo</label>
+                                <label class="col-md-4 control-label">Idade *</label>
+                                <div class="col-md-2">
+                                    <input type="text" required="required" class="form-control" name="age">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">Sexo *</label>
                                 <div class="col-md-4">
                                     <div class="checkbox">
                                         <label class="radio-inline">
@@ -72,16 +72,6 @@
                                         </label>
                                         <label class="radio-inline">
                                             <input type="radio" name="sex" id="sexFeminino" value="Feminino"> Feminino
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <div class="col-md-6 col-md-offset-4">
-                                    <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox" value="1" name="isSubscriber"> É assinante da revista cidade nova?
                                         </label>
                                     </div>
                                 </div>
