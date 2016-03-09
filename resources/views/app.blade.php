@@ -52,7 +52,7 @@
 							<li><a href="{{ url('/login') }}">Login</a></li>
 						@endif
 						@if(!Request::is('/register'))
-							<li><a href="{{ url('/register') }}">Registrar</a></li> 
+							<li><a href="{{ url('/register') }}">Registrar</a></li>
 						@endif
 					@else
 						<li class="dropdown">
