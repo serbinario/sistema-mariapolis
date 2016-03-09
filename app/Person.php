@@ -8,10 +8,11 @@ class Person extends Model
 {
     protected $fillable = [
         'name',
-        'address',
+        'age',
         'city',
         'uf',
         'phone',
+        'sex',
         'isSubscriber'
     ];
 }

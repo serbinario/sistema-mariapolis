@@ -24,7 +24,7 @@
                             <div class="form-group">
                                 <label class="col-md-4 control-label">Nome</label>
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control" name="name"">
+                                    <input type="text" required="required" class="form-control" name="name"">
                                 </div>
                             </div>
 
@@ -36,30 +36,44 @@
                             </div>--}}
 
                             <div class="form-group">
-                                <label class="col-md-4 control-label">Endereço</label>
-                                <div class="col-md-6">
-                                    <input type="text" class="form-control" name="address">
+                                <label class="col-md-4 control-label">Idade</label>
+                                <div class="col-md-2">
+                                    <input type="text" required="required" class="form-control" name="age">
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <label class="col-md-4 control-label">Cidade</label>
                                 <div class="col-md-4">
-                                    <input type="text" class="form-control" name="city">
+                                    <input type="text" required="required" class="form-control" name="city">
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <label class="col-md-4 control-label">UF</label>
                                 <div class="col-md-2">
-                                    <input type="text" class="form-control" name="uf">
+                                    <input type="text" required="required" class="form-control" name="uf">
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <label class="col-md-4 control-label">Telefone</label>
                                 <div class="col-md-4">
-                                    <input type="text" class="form-control" name="phone">
+                                    <input type="text" required="required" class="form-control" name="phone">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">Sexo</label>
+                                <div class="col-md-4">
+                                    <div class="checkbox">
+                                        <label class="radio-inline">
+                                            <input type="radio" name="sex" id="sexMasculino" value="1"> Masculino
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="sex" id="sexFeminino" value="2"> Feminino
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
 
@@ -67,7 +81,8 @@
                                 <div class="col-md-6 col-md-offset-4">
                                     <div class="checkbox">
                                         <label>
-clear                                        </label>
+                                            <input type="checkbox" value="1" name="isSubscriber"> É assinante da revista cidade nova?
+                                        </label>
                                     </div>
                                 </div>
                             </div>

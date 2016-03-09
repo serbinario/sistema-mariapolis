@@ -7,7 +7,8 @@
         <tr>
             <th>Nome</th>
             <th>Telefone</th>
-            <th>Endereço</th>
+            <th>Sexo</th>
+            <th>Idade</th>
             <th>Cidade</th>
             <th>UF</th>
         </tr>
@@ -25,7 +26,8 @@
             columns: [
                 { data: 'name', name: 'name' },
                 { data: 'phone', name: 'phone' },
-                { data: 'address', name: 'address' },
+                { data: 'sex', name: 'sex' }
+                { data: 'age', name: 'age' },
                 { data: 'city', name: 'city' },
                 { data: 'uf', name: 'uf' }
             ]
