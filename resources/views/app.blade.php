@@ -31,7 +31,7 @@
 					<span class="icon-bar"></span>
 				</button>
                 <a class="navbar-brand" href="http://www.serbinario.com.br">
-                    <img src="/sistema-mariapolis/public/images/logo-serbinario.png'}}" alt="logo serbinário" height="30" width="200">
+                    <img src="/sistema-mariapolis/public/images/logo-serbinario.png" alt="logo serbinário" height="30" width="200">
                 </a>
 			</div>
 
