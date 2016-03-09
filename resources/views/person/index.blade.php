@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('content')
-    <a class="btn btn-default" href=" {{ route('cadastro.create') }}" role="button">Nova Pessoa</a><br><br>
+    <a class="btn btn-primary" href=" {{ route('cadastro.create') }}" role="button">Inscri&ccedil;&otilde;es</a><br><br>
     <table class="table table-bordered" id="users-table">
         <thead>
         <tr>

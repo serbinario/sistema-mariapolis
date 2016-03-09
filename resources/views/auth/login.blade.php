@@ -5,7 +5,7 @@
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
 			<div class="panel panel-default">
-				<div class="panel-heading">Login</div>
+				<div class="panel-heading">Login - Inscri&ccedil;&otilde;es Mari&aacute;polis 50 anos!</div>
 				<div class="panel-body">
 					@if (count($errors) > 0)
 						<div class="alert alert-danger">
@@ -17,14 +17,14 @@
 							</ul>
 						</div>
 					@endif
-
+					
 					<form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
 						{!! csrf_field() !!}
 
 						<div class="form-group">
-							<label class="col-md-4 control-label">E-Mail</label>
+							<label class="col-md-4 control-label">Login</label>
 							<div class="col-md-6">
-								<input type="email" class="form-control" name="email" value="{{ old('email') }}">
+								<input type="text" class="form-control" name="email" value="{{ old('email') }}">
 							</div>
 						</div>
 

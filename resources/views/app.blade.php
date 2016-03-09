@@ -31,15 +31,18 @@
 					<span class="icon-bar"></span>
 				</button>
                 <a class="navbar-brand" href="http://www.serbinario.com.br">
-                    <img src="/images/logo-serbinario.png" alt="logo serbinário" height="30" width="200">
+                    <img src="{{'images/logo-serbinario.png'}}" alt="logo serbinário" height="30" width="200">
                 </a>
 			</div>
 
 			<div class="collapse navbar-collapse" id="navbar">
+				@if(Auth::check())
+ 
 				<ul class="nav navbar-nav">
 					<li><a href="{{ url('/home') }}">INÍCIO</a></li>
                     <li><a href="{{ url('/cadastro') }}">CADASTRO</a></li>
 				</ul>
+                               @endif
 
 				<ul class="nav navbar-nav navbar-right">
 					@if(auth()->guest())
@@ -47,7 +50,7 @@
 							<li><a href="{{ url('/login') }}">Login</a></li>
 						@endif
 						@if(!Request::is('/register'))
-							<li><a href="{{ url('/register') }}">Registrar</a></li>
+						<!--	<li><a href="{{ url('/register') }}">Registrar</a></li> -->
 						@endif
 					@else
 						<li class="dropdown">
