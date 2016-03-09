@@ -68,10 +68,10 @@
                                 <div class="col-md-4">
                                     <div class="checkbox">
                                         <label class="radio-inline">
-                                            <input type="radio" name="sex" id="sexMasculino" value="1"> Masculino
+                                            <input type="radio" checked name="sex" id="sexMasculino" value="Masculino"> Masculino
                                         </label>
                                         <label class="radio-inline">
-                                            <input type="radio" name="sex" id="sexFeminino" value="2"> Feminino
+                                            <input type="radio" name="sex" id="sexFeminino" value="Feminino"> Feminino
                                         </label>
                                     </div>
                                 </div>

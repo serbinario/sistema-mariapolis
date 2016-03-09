@@ -26,7 +26,7 @@
             columns: [
                 { data: 'name', name: 'name' },
                 { data: 'phone', name: 'phone' },
-                { data: 'sex', name: 'sex' }
+                { data: 'sex', name: 'sex' },
                 { data: 'age', name: 'age' },
                 { data: 'city', name: 'city' },
                 { data: 'uf', name: 'uf' }
