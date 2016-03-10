@@ -7,14 +7,10 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">INSCRIÇÃO - <strong>Campos seguidos de * são obrigatórios.</strong></div>
                     <div class="panel-body">
-                        @if (count($errors) > 0)
-                            <div class="alert alert-danger">
-                                <strong>Whoops!</strong> There were some problems with your input.<br><br>
-                                <ul>
-                                    @foreach ($errors->all() as $error)
-                                        <li>{{ $error }}</li>
-                                    @endforeach
-                                </ul>
+                        @if(Session::has('message'))
+                            <div class="alert alert-success">
+                                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                                <em> {!! session('message') !!}</em>
                             </div>
                         @endif
 

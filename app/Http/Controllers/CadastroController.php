@@ -50,7 +50,7 @@ class CadastroController extends Controller
     {
         Person::create($request->all());
 
-        return redirect()->back();
+        return redirect()->back()->with('message', 'Inscrição realizada com sucesso!');
     }
 
     /**
