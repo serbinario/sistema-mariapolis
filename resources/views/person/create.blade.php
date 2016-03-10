@@ -82,7 +82,7 @@
                             </div>
                         </form>
                         <br>
-                        <h5>OBS: Taxa de inscrição de R$ 10,00.</h5>
+                        <h5 style="color:red;">OBS: Taxa de inscrição de R$ 10,00.</h5>
                     </div>
                 </div>
             </div>
