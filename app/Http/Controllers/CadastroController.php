@@ -27,7 +27,10 @@ class CadastroController extends Controller
      */
     public function anyData()
     {
-        return Datatables::of(Person::query())->make(true);
+        #Editando a grid
+        return Datatables::of(Person::query())->addColumn('action', function ($row) {
+            return '<a title="Remover Pessoa" href="destroy/'.$row->id.'" class="btn btn-xs btn-danger"><i class="glyphicon glyphicon-remove"></i></a>';
+        })->make(true);
     }
 
     /**
@@ -95,6 +98,10 @@ class CadastroController extends Controller
      */
     public function destroy($id)
     {
-        //
+        # Removendo o registro
+        Person::destroy($id);
+
+        #Retorno para a view
+        return redirect()->back()->with("message", "Remoção realizada com sucesso!");
     }
 }

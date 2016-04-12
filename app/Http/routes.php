@@ -15,3 +15,4 @@ Route::get('cadastro', ['as' => 'cadastro.index', 'middleware'=>'auth', 'uses' =
 Route::get('anyData', ['as' => 'datatables.data', 'middleware'=>'auth', 'uses' => 'CadastroController@anyData']);
 Route::get('cadastro/create', ['as' => 'cadastro.create', 'middleware'=>'auth', 'uses' => 'CadastroController@create']);
 Route::post('cadastro/store', ['as' => 'cadastro.store', 'middleware'=>'auth', 'uses' => 'CadastroController@store']);
+Route::get('destroy/{id}', ['as' => 'cadastro.destroy', 'middleware'=>'auth', 'uses' => 'CadastroController@destroy']);
