@@ -30,6 +30,7 @@
         $('#users-table').DataTable({
             processing: true,
             serverSide: true,
+            iDisplayLength: 100,
             dom: 'Bfrtip',
             buttons: ['copy', 'csv', 'excel', 'pdf'],
             ajax: '{!! route('datatables.data') !!}',
