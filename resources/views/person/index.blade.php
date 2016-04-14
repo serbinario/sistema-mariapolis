@@ -14,7 +14,7 @@
             <tr>
                 <th>Nome</th>
                 <th>Telefone</th>
-                <th>Sexo</th>
+                <th >Sexo</th>
                 <th>Idade</th>
                 <th>Cidade</th>
                 <th>UF</th>
@@ -39,7 +39,7 @@
     $(function() {
         $('#users-table tfoot th').each( function () {
             var title = $(this).text();
-            $(this).html( '<input type="text" placeholder="Pesquisar '+title+'" />' );
+            $(this).html( '<input style="width: 100%;" type="text" placeholder="Pesquisar '+title+'" />' );
         } );
 
         var table = $('#users-table').DataTable({
