@@ -5,7 +5,7 @@
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
 			<div class="panel panel-default">
-				<div class="panel-heading">Login - <a href="www.serbinario.com.br">Serbininário</a></div>
+				<div class="panel-heading">Login - <a target="_blank" href="http://www.serbinario.com.br">Serbininário</a></div>
 				<div class="panel-body">
 					@if (count($errors) > 0)
 						<div class="alert alert-danger">
@@ -34,7 +34,7 @@
 								<input type="password" class="form-control" name="password">
 							</div>
 						</div>
-						
+
 
 						<div class="form-group">
 							<div class="col-md-6 col-md-offset-4">
