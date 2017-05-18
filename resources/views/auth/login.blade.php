@@ -5,7 +5,7 @@
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
 			<div class="panel panel-default">
-				<div class="panel-heading">Login - Inscri&ccedil;&otilde;es Mari&aacute;polis 50 anos!</div>
+				<div class="panel-heading">Login - <a href="www.serbinario.com.br">Serbininário</a></div>
 				<div class="panel-body">
 					@if (count($errors) > 0)
 						<div class="alert alert-danger">
@@ -34,16 +34,7 @@
 								<input type="password" class="form-control" name="password">
 							</div>
 						</div>
-
-						<div class="form-group">
-							<div class="col-md-6 col-md-offset-4">
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" name="remember"> Lembre-me
-									</label>
-								</div>
-							</div>
-						</div>
+						
 
 						<div class="form-group">
 							<div class="col-md-6 col-md-offset-4">
