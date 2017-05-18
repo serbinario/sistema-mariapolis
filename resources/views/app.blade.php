@@ -42,8 +42,8 @@
 				@if(Auth::check())
                     <ul class="nav navbar-nav">
                         {{--<li><a href="{{ url('/home') }}">INÍCIO</a></li>--}}
-                        <li><a href="{{ url('/cadastro/create') }}">CADASTRO</a></li>
                         @if(auth()->user()->role == "admin")
+							<li><a href="{{ url('/cadastro/create') }}">CADASTRO</a></li>
                             <li><a href="{{ url('/cadastro') }}">GERENCIAMENTO</a></li>
                         @endif
                     </ul>
@@ -61,7 +61,7 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ auth()->user()->name }} <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
-								<li><a href="{{ url('/logout') }}">Logout</a></li>
+								<li><a href="{{ url('/logout') }}">SAIR</a></li>
 							</ul>
 						</li>
 					@endif
