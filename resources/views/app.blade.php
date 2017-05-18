@@ -41,7 +41,7 @@
 			<div class="collapse navbar-collapse" id="navbar">
 				@if(Auth::check())
                     <ul class="nav navbar-nav">
-                        <li><a href="{{ url('/home') }}">INÍCIO</a></li>
+                        {{--<li><a href="{{ url('/home') }}">INÍCIO</a></li>--}}
                         <li><a href="{{ url('/cadastro/create') }}">CADASTRO</a></li>
                         @if(auth()->user()->role == "admin")
                             <li><a href="{{ url('/cadastro') }}">GERENCIAMENTO</a></li>
